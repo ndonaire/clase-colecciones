@@ -1,15 +1,14 @@
 package Colecciones;
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.HashSet;
 
-public class ListArray {
+public class SetHash {
 
 	public static void main(String[] args) {
-		// ARRAY LIST AGREGA ELEMENTOS SIN ORDENARLOS
+		// HASH SET AGREGA ELEMENTOS SIN ORDENARLOS
 
 		// Crear (new)
-		ArrayList<Integer> numeros = new ArrayList<Integer>(); // siempre setear con Object
+		HashSet<Integer> numeros = new HashSet<Integer>(); // siempre setear con Object
 
 		// Agregar elemento
 		numeros.add(51);
@@ -20,13 +19,13 @@ public class ListArray {
 		numeros.add(58);
 
 		// Agregar en posición
-		numeros.add(2, 5);
+		// NO TIENE SENTIDO XD
 
 		// Ver si está un elemento
 		System.out.println("Hay numero 4? " + numeros.contains(4));
 
 		// Recuperar por posicion
-		System.out.println("Recuperar por posicion 2: " + numeros.get(2));
+		// NO TIENE SENTIDO XD
 
 		// Recuperar por elemento
 		// NO TIENE SENTIDO XD
@@ -35,22 +34,22 @@ public class ListArray {
 		numeros.remove(2);
 
 		// Eliminar por posicion
-		numeros.remove(0);
+		// NO TIENE SENTIDO XD
 
 		// Bucar posicion de elemento
-		System.out.println("Posicion de elemento 59: " + numeros.indexOf(59));
+		// NO TIENE SENTIDO XD
 
 		// Imprimir
-		System.out.println("ArrayList completo:" + numeros);
+		System.out.println("HashSet completo:" + numeros);
 
 		// Vaciar
-		numeros.clear(); // comentar esta linea para poder probar el resto
+		// numeros.clear(); // comentar esta linea para poder probar el resto
 
 		// Ver si está vacío
-		System.out.println("ArrayList vacio?:" + numeros.isEmpty());
+		System.out.println("HashSet vacio?:" + numeros.isEmpty());
 
 		// Tamaño
-		System.out.println("Tamaño ArrayList?: " + numeros.size());
+		System.out.println("Tamaño HashSet?: " + numeros.size());
 
 		// Recorrer
 		System.out.println("Recorrer ArrayList");
@@ -62,10 +61,7 @@ public class ListArray {
 		}
 
 		// Orden
-		// NO ESTÁ ORDENADO, PARA ORDENAR:
-		System.out.println("ArrayList Ordenado");
-		numeros.sort(Comparator.naturalOrder());
-		System.out.println(numeros);
+		// NO ESTÁ ORDENADO, NO SE PUEDE ORDENAR (EXCPETO USANDO UNA LIST)
 
 	}
 

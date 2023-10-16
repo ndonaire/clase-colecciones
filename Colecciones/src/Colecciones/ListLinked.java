@@ -1,15 +1,15 @@
 package Colecciones;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Comparator;
 
-public class ListArray {
+public class ListLinked {
 
 	public static void main(String[] args) {
-		// ARRAY LIST AGREGA ELEMENTOS SIN ORDENARLOS
+		// LINKED LIST AGREGA ELEMENTOS SIN ORDENARLOS
 
 		// Crear (new)
-		ArrayList<Integer> numeros = new ArrayList<Integer>(); // siempre setear con Object
+		LinkedList<Integer> numeros = new LinkedList<Integer>(); // siempre setear con Object
 
 		// Agregar elemento
 		numeros.add(51);
@@ -41,19 +41,19 @@ public class ListArray {
 		System.out.println("Posicion de elemento 59: " + numeros.indexOf(59));
 
 		// Imprimir
-		System.out.println("ArrayList completo:" + numeros);
+		System.out.println("LinkedList completo:" + numeros);
 
 		// Vaciar
-		numeros.clear(); // comentar esta linea para poder probar el resto
+		//numeros.clear(); // comentar esta linea para poder probar el resto
 
 		// Ver si está vacío
-		System.out.println("ArrayList vacio?:" + numeros.isEmpty());
+		System.out.println("LinkedList vacio?:" + numeros.isEmpty());
 
 		// Tamaño
-		System.out.println("Tamaño ArrayList?: " + numeros.size());
+		System.out.println("Tamaño LinkedList?: " + numeros.size());
 
 		// Recorrer
-		System.out.println("Recorrer ArrayList");
+		System.out.println("Recorrer LinkedList");
 
 		numeros.forEach((n) -> System.out.println(n));
 
@@ -63,7 +63,7 @@ public class ListArray {
 
 		// Orden
 		// NO ESTÁ ORDENADO, PARA ORDENAR:
-		System.out.println("ArrayList Ordenado");
+		System.out.println("LinkedList Ordenado");
 		numeros.sort(Comparator.naturalOrder());
 		System.out.println(numeros);
 
